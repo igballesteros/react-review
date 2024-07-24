@@ -5,7 +5,7 @@ function Intro() {
 }
 
 function Ignacio() {
-  return <span>&nbsp;Ignacio</span>;
+  return <span className="ignacio">&nbsp;Ignacio</span>;
 }
 
 export default function App() {
