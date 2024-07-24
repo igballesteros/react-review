@@ -1,13 +1,21 @@
-import ListGroup from "./components/ListGroup";
+import "./styles.css";
 
-function App() {
-  const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-
-  return (
-    <div>
-      <ListGroup items={items} heading="Cities" />
-    </div>
-  );
+function Intro() {
+  return <div className="intro">I am a Software Developer</div>;
 }
 
-export default App;
+function Ignacio() {
+  return <span>&nbsp;Ignacio</span>;
+}
+
+export default function App() {
+  return (
+    <>
+      <div className="intro">
+        Hi! I'm <Ignacio />
+      </div>
+      <Intro />
+      <div>this is my website</div>
+    </>
+  );
+}
